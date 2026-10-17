@@ -1,53 +1,253 @@
 
-<section class="section letter-section">
-  <article class="letter">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <p class="eyebrow">CON TODO NUESTRO AMOR</p>
+  <title>Con todo nuestro amor | Rodrigo & Emily</title>
 
-    <h2>Para Rodrigo <em>& Emily</em></h2>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    <div class="fotos-boda">
-      <img
-        src="fotos/foto1.jpg.jpeg"
-        alt="Fotografía de Rodrigo y Emily"
-      >
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: #fff7f5;
+      color: #624747;
+      line-height: 1.8;
+    }
 
-      <img
-        src="fotos/foto2.jpg.jpeg"
-        alt="Otra fotografía de Rodrigo y Emily"
-      >
-    </div>
+    .portada {
+      min-height: 65vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #f8dfdf, #fff8f0);
+    }
 
-    <div class="letter-copy">
-      <p>Queridos Rodrigo y Emily:</p>
+    .portada .detalle {
+      font-size: 13px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
 
-      <p>
-        Hoy celebramos el amor, los recuerdos compartidos
-        y todos los momentos hermosos que construyeron juntos.
-      </p>
+    .portada h1 {
+      font-size: clamp(38px, 8vw, 68px);
+      color: #9e626a;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
 
-      <p>
-        Que cada día siga regalándoles motivos para sonreír,
-        abrazarse y elegirse una vez más. Que nunca falten
-        la complicidad, la ternura y la felicidad en sus vidas.
-      </p>
+    .portada h1 em {
+      font-weight: normal;
+    }
 
-      <p>
-        Que esta historia de amor continúe llenándose de
-        nuevas aventuras, sueños cumplidos y recuerdos
-        inolvidables.
-      </p>
+    .portada p {
+      font-size: 18px;
+      max-width: 550px;
+    }
 
-      <p>
-        Con todo nuestro cariño, les deseamos muchos años
-        más de amor y felicidad.
-      </p>
+    .corazon {
+      font-size: 32px;
+      margin-top: 25px;
+      color: #c17d86;
+    }
 
-      <p class="firma">
-        Con mucho amor ❤️
-      </p>
-    </div>
+    .section {
+      padding: 65px 20px;
+    }
 
-  </article>
-</section>
+    .letter {
+      max-width: 900px;
+      margin: auto;
+      background: #ffffff;
+      padding: clamp(25px, 5vw, 55px);
+      border-radius: 18px;
+      box-shadow: 0 8px 30px rgba(120, 70, 70, 0.08);
+    }
 
+    .eyebrow {
+      text-align: center;
+      font-size: 12px;
+      letter-spacing: 3px;
+      color: #b47a80;
+      margin-bottom: 15px;
+    }
+
+    .letter h2 {
+      text-align: center;
+      color: #9e626a;
+      font-size: clamp(30px, 5vw, 42px);
+      margin-bottom: 30px;
+    }
+
+    .letter h2 em {
+      font-weight: normal;
+    }
+
+    .fotos-boda {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 22px;
+      margin: 30px auto 40px;
+    }
+
+    .fotos-boda img {
+      display: block;
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      max-height: 440px;
+      object-fit: contain;
+      border-radius: 14px;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.13);
+      background: #fff7f5;
+    }
+
+    .letter-copy {
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: 17px;
+    }
+
+    .letter-copy p {
+      margin-bottom: 22px;
+    }
+
+    .firma {
+      text-align: center;
+      color: #a46770;
+      font-style: italic;
+      font-size: 21px;
+      margin-top: 35px;
+    }
+
+    .final {
+      text-align: center;
+      padding: 45px 20px;
+      background: #f5dfdf;
+      color: #8e5c63;
+    }
+
+    .final p {
+      font-size: 16px;
+    }
+
+    .final .corazon {
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .portada {
+        min-height: 55vh;
+      }
+
+      .section {
+        padding: 35px 14px;
+      }
+
+      .fotos-boda {
+        gap: 20px;
+      }
+
+      .fotos-boda img {
+        max-width: 100%;
+      }
+
+      .letter-copy {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="portada">
+    <p class="detalle">Una historia de amor</p>
+
+    <h1>Rodrigo <em>&amp; Emily</em></h1>
+
+    <p>
+      Celebramos el amor, los recuerdos y todos los momentos
+      hermosos que hacen única su historia.
+    </p>
+
+    <div class="corazon">♡</div>
+  </header>
+
+  <main>
+    <section class="section letter-section">
+      <article class="letter">
+
+        <p class="eyebrow">CON TODO NUESTRO AMOR</p>
+
+        <h2>Para Rodrigo <em>&amp; Emily</em></h2>
+
+        <div class="fotos-boda">
+          <img
+            src="./fotos/foto1.jpg.jpeg"
+            alt="Primera fotografía de Rodrigo y Emily"
+          >
+
+          <img
+            src="./fotos/foto2.jpg.jpeg"
+            alt="Segunda fotografía de Rodrigo y Emily"
+          >
+        </div>
+
+        <div class="letter-copy">
+          <p>Queridos Rodrigo y Emily:</p>
+
+          <p>
+            Hay historias que se vuelven inolvidables porque están
+            llenas de amor, de pequeños detalles y de momentos que
+            quedan guardados para siempre en el corazón.
+          </p>
+
+          <p>
+            Hoy queremos celebrar su unión y todos los recuerdos
+            que han construido juntos. Que nunca les falten las
+            sonrisas compartidas, los abrazos que reconfortan y
+            las ganas de seguir caminando de la mano.
+          </p>
+
+          <p>
+            Que cada nuevo día les regale una razón para elegirse
+            nuevamente, acompañarse en los desafíos y disfrutar
+            de las pequeñas cosas que hacen grande la vida.
+          </p>
+
+          <p>
+            Les deseamos que su historia siga creciendo con
+            ternura, complicidad, respeto y muchísimo amor.
+            Que los mejores recuerdos todavía estén por llegar.
+          </p>
+
+          <p class="firma">
+            Con todo nuestro amor ♡
+          </p>
+        </div>
+
+      </article>
+    </section>
+  </main>
+
+  <footer class="final">
+    <p>Por muchos años más de amor y felicidad.</p>
+    <div class="corazon">♥</div>
+    <p>Rodrigo &amp; Emily</p>
+  </footer>
+
+</body>
+</html>
